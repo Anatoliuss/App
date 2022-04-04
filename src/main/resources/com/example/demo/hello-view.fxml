@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <TextField fx:id="A" style="-fx-background-radius: 5px;" />
+   <TextField fx:id="B" style="-fx-background-radius: 5px;" />
+   <TextField fx:id="C" style="-fx-background-radius: 5px;" />
+   <PieChart fx:id="piechart" animated="false" prefHeight="107.0" prefWidth="148.0" style="-fx-position-shape: circle;" />
+
+    <Label fx:id="welcomeText" />
+    <Button onAction="#doSmth" text="Hello!" />
+   <ToggleButton fx:id="colour" mnemonicParsing="false" onAction="#Change" style="-fx-background-color: #000000; " text="Change colour" textFill="WHITE">
+      <effect>
+         <Blend>
+            <topInput>
+               <ColorInput />
+            </topInput>
+         </Blend>
+      </effect>
+   </ToggleButton>
+</VBox>
